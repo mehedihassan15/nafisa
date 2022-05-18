@@ -1,0 +1,128 @@
+html {
+    font-size: 62.5%;
+}
+
+/*  */
+/*  */
+/* ----------------------------------------------------------section devider-------------------------------------------------------------------------------- */
+/*  */
+/*  */
+
+.main-sign-in {
+    display: flex;
+    margin: 5rem 0;
+    align-items: center;
+}
+
+.main-sign-in h2 {
+    font-size: 3.5rem;
+    max-width: 70%;
+    margin: auto;
+}
+
+.main-sign-in > div:nth-child(1) {
+    flex: 40%;
+}
+.main-sign-in > div:nth-child(2) {
+    flex: 40%;
+    display: flex;
+    flex-direction: column;
+    border: 0.1rem solid;
+    padding: 1rem 1.5rem;
+    border-radius: 0.7rem;
+    max-width: 40rem;
+}
+
+.main-sign-in h3 {
+    font-size: 2rem;
+}
+
+.main-sign-in form {
+    padding: 2rem;
+    border-radius: 0.7rem;
+    max-width: 100%;
+    margin: 3rem 0;
+    box-shadow: 0 0 0.1rem 0.3rem rgba(151, 149, 149, 0.295);
+    transition: box-shadow ease-in-out 0.7s;
+}
+
+.main-sign-in form:hover {
+    box-shadow: 0 0 0.7rem 0.3rem rgb(151, 149, 149);
+    cursor: pointer;
+}
+
+.main-sign-in fieldset {
+    border: 0.1rem solid;
+    padding: 1rem 1.5rem;
+    border-radius: 0.7rem;
+    max-width: 100%;
+    margin-bottom: 3rem;
+}
+
+.main-sign-in input {
+    flex: 50%;
+    border: 0.1rem solid lightgray;
+    border-radius: 0.3rem;
+    padding: 1rem 1.5rem;
+    letter-spacing: 0.1rem;
+    background: rgba(211, 193, 193, 0.151);
+    min-width: 100%;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.main-sign-in input[type="checkbox"] {
+    min-width: 0%;
+}
+
+.main-sign-in input[type="checkbox"]:checked + span {
+    color: #0004fd;
+    font-weight: bolder;
+}
+
+.main-sign-in span {
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+}
+
+.main-sign-in fieldset > div:nth-child(3) {
+    text-indent: 1.5rem;
+}
+
+.main-sign-in fieldset > div:nth-child(4) {
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+.main-sign-in input[type="search"] {
+    background: transparent;
+}
+
+.main-sign-in input::placeholder {
+    letter-spacing: 0.1rem;
+    background: rgba(221, 213, 213, 0.096);
+}
+
+.main-sign-in form > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.7rem;
+}
+
+.main-sign-in form a {
+    font-size: 1.7rem;
+    color: lightseagreen;
+}
+
+.main-sign-in form a:hover {
+    color: orangered;
+}
+
+.main-sign-in form hr {
+    border: 0.2rem solid;
+    border-bottom: none;
+    margin: 1.5rem 0;
+    min-width: 70%;
+}

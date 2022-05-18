@@ -1,0 +1,101 @@
+html {
+    font-size: 62.5%;
+}
+
+/*  */
+/*  */
+/* ----------------------------------------------------------section devider-------------------------------------------------------------------------------- */
+/*  */
+/*  */
+
+.cls-main {
+    margin: 5rem 0;
+}
+
+.cls-main section {
+    display: flex;
+    flex-direction: column;
+}
+
+/*  */
+/*  */
+/* first div */
+.cls-main section > div:nth-child(1) {
+    align-self: center;
+}
+
+.cls-main h2 {
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/*  */
+/*  */
+/* second div */
+.cls-main section > div:nth-child(2) {
+    align-self: flex-end;
+    margin: 3rem 3.5rem;
+}
+
+/*  */
+/*  */
+/* third div */
+.cls-main section > div:nth-child(3) {
+    align-self: flex-start;
+}
+
+.cls-main section > div:nth-child(3) p {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 1.7rem;
+}
+
+/*  */
+/*  */
+/* fourth div */
+.cls-main .cls-cld-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.cls-main .cls-cld-2 {
+    display: flex;
+    margin: 1rem 0;
+}
+
+.cls-main .cls-cld-2 > div:nth-child(1) {
+    flex: 60%;
+}
+.cls-main .cls-cld-2 > div:nth-child(2) {
+    flex: 20%;
+    text-align: center;
+}
+.cls-main .cls-cld-2 > div:nth-child(3) {
+    flex: 20%;
+    text-align: center;
+}
+
+.cls-main .cls-cld-2 p {
+    font-size: 1.7rem;
+}
+
+.cls-main .cls-cld-2 span {
+    font-weight: bolder;
+}
+
+.cls-main input {
+    border: 0.1rem solid lightgray;
+    border-radius: 50rem;
+    padding: 0.7rem 1.5rem;
+    letter-spacing: 0.1rem;
+    background: rgb(243, 238, 238);
+    width: 25rem;
+    text-indent: 1.5rem;
+}
+
+.cls-main input::placeholder {
+    text-indent: 1.5rem;
+}

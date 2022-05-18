@@ -1,0 +1,356 @@
+html {
+    font-size: 62.5%;
+}
+
+/*  */
+/*  */
+/* ----------------------------------------------------------section devider-------------------------------------------------------------------------------- */
+/*  */
+/*  */
+
+.course-details > section {
+    margin: 5rem 0;
+}
+
+.course-details h3 {
+    font-size: 2.4rem;
+    margin-bottom: 1.7rem;
+    color: skyblue;
+    text-decoration: underline;
+}
+
+/*  */
+/*  */
+/* hero section */
+.cd-hero {
+    position: relative;
+}
+
+.cd-hero img {
+    width: 100%;
+}
+
+.cd-hero > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+}
+
+.cd-hero h2 {
+    font-size: 4.5rem;
+    font-weight: bold;
+    margin-bottom: 1.7rem;
+}
+
+.cd-hero button {
+    font-size: 1.9rem;
+    background: lightseagreen;
+    border: 0.3rem solid lavender;
+    border-style: inset;
+    padding: 1rem 2.2rem;
+    font-weight: bold;
+    color: white;
+    align-self: center;
+    transition: all ease-in-out 0.4s;
+    width: 15rem;
+}
+
+.cd-hero button:hover {
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+/*  */
+/*  */
+/* overview section */
+.cd-ovw-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cd-ovw-child-1 {
+    flex: 60%;
+}
+
+.cd-ovw-child-2 {
+    flex: 40%;
+    text-align: center;
+}
+
+.cd-ovw-child-1 > div:not(:last-child) {
+    margin-bottom: 3rem;
+}
+
+.cd-ovw-child-2 > div:not(:last-child) {
+    margin-bottom: 7rem;
+}
+
+.cd-ovw-child-1 h4 {
+    font-weight: bolder;
+    font-size: 2rem;
+    margin-bottom: 1.3rem;
+}
+
+.cd-ovw-child-1 p {
+    font-size: 1.7rem;
+    line-height: 1.7;
+    max-width: 50%;
+}
+
+.cd-ovw-child-2 > div {
+    max-width: 50%;
+    margin: auto;
+    font-size: 1.7rem;
+    color: gray;
+}
+
+.cd-ovw-child-2 > div:nth-child(1) > P:nth-child(1) {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: lightseagreen;
+}
+
+.cd-ovw-child-2 > div:nth-child(1) > P:nth-child(1):hover {
+    cursor: pointer;
+    font-size: 3rem;
+    color: dodgerblue;
+}
+
+.cd-ovw-child-2 > div:nth-child(1) > P:nth-child(2) {
+    margin: 1rem 0;
+    font-size: 2.1rem;
+    font-weight: bold;
+}
+
+.cd-ovw-child-2 > div:nth-child(2) > P:nth-child(2) {
+    margin: 1rem 0 0 0;
+    font-size: 2.1rem;
+    font-weight: bold;
+}
+
+/*  */
+/*  */
+/* syllabus section */
+.cd-slybs-flex {
+    display: flex;
+}
+
+.cd-slybs-flex h4 {
+    font-weight: bolder;
+    font-size: 2rem;
+    margin-bottom: 1.3rem;
+}
+
+.cd-slybs-flex h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.cd-slybs-child-1 {
+    flex: 60%;
+}
+
+.cd-slybs-child-2 {
+    flex: 40%;
+}
+
+.cd-slybs-child-1 > div:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+.cd-slybs-child-1 > div > p {
+    font-size: 1.4rem;
+    line-height: 1.4;
+    max-width: 50%;
+}
+
+.cd-slybs-child-1 > div:nth-child(1) > p {
+    font-size: 1.7rem;
+    line-height: 1.4;
+    max-width: 50%;
+}
+
+.cd-slybs-child-2 > div {
+    max-width: 50%;
+    margin: 0 auto 5rem;
+}
+
+.cd-slybs-child-2 > div:nth-child(1) p {
+    font-size: 1.7rem;
+}
+
+.cd-slybs-child-2 > div:nth-child(1) a {
+    color: rgb(119, 201, 252);
+    font-family: "Libre Baskerville", serif;
+    font-size: 1.5rem;
+    text-decoration: underline;
+    margin: 0 0.5rem;
+}
+
+.cd-slybs-child-2 > div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.7rem;
+    min-height: 20rem;
+    max-width: 25rem;
+    box-shadow: 0 0 1.7rem 0.1rem grey;
+}
+
+.cd-slybs-child-2 > div:nth-child(2) > div {
+    max-width: 35%;
+}
+
+.cd-slybs-child-2 > div:nth-child(2) img {
+    width: 100%;
+}
+
+.cd-slybs-child-2 > div:nth-child(2) > h6 {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.cd-slybs-child-2 > div:nth-child(2) > p {
+    font-size: 1.4rem;
+}
+
+/*  */
+/*  */
+/* review section */
+.cd-rw-card-container {
+    margin-top: 3rem;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+}
+
+.cd-rw-card {
+    margin: 3rem 0;
+    background: rgb(197, 190, 190);
+    max-width: 35rem;
+    padding: 2%;
+    min-height: 30rem;
+    position: relative;
+}
+
+.quote {
+    position: absolute;
+    max-width: 5rem;
+    top: -2.3rem;
+    left: 2.1rem;
+}
+
+.quote img {
+    width: 100%;
+}
+
+.cd-rw-card-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cd-rw-card-head > div:nth-child(1) {
+    flex: 20%;
+    margin-right: 2rem;
+}
+
+.cd-rw-card-head > div:nth-child(2) {
+    flex: 80%;
+}
+
+.cd-rw-card-head img {
+    max-width: 100%;
+}
+
+.cd-rw-card-head h4 {
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.cd-rw-card-head h5 {
+    font-size: 1.3rem;
+}
+
+.cd-rw-card-body {
+    padding: 3%;
+    background: gray;
+    margin-top: 1.5rem;
+    border-radius: 0.7rem;
+}
+
+.cd-rw-card-body p {
+    font-size: 1.4rem;
+    line-height: 1.7;
+    color: rgb(233, 225, 225);
+}
+
+.cd-rw-card-sec {
+    text-align: center;
+}
+
+/*  */
+/*  */
+/* review section slider */
+.wrapper {
+    width: 100%;
+}
+
+.wrapper .carousel {
+    position: relative;
+    max-width: 100rem;
+    margin: auto;
+    padding: 0 6rem;
+}
+
+.owl-dots {
+    text-align: center;
+}
+
+.owl-dot {
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    margin: 0 0.5rem;
+    border: 0.2rem solid lightskyblue !important;
+    transition: all 0.3s ease-in-out;
+}
+
+.owl-dot:hover,
+.owl-dot.active {
+    background-color: lightskyblue !important;
+}
+
+.owl-prev,
+.owl-next {
+    position: absolute;
+    top: 45%;
+    transform: translate(-50%, -50%);
+}
+
+.owl-prev {
+    left: 4rem;
+}
+
+.owl-next {
+    right: 1.5rem;
+}
+
+.owl-prev span,
+.owl-next span {
+    color: lightseagreen;
+    font-size: 6rem;
+}
+
+.owl-prev span:hover,
+.owl-next span:hover {
+    color: lightskyblue;
+    font-size: 7rem;
+}

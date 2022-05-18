@@ -1,0 +1,112 @@
+html {
+    font-size: 62.5%;
+}
+
+/*  */
+/*  */
+/* ----------------------------------------------------------section devider-------------------------------------------------------------------------------- */
+/*  */
+/*  */
+
+.main-courses {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 0;
+}
+
+.main-courses > div {
+    width: 95%;
+    max-width: 100%;
+    border: solid 0.2rem;
+    padding: 2% 3%;
+    border-radius: 1rem;
+}
+
+.main-courses h2 {
+    font-size: 3.2rem;
+    font-weight: bold;
+    font-family: "Libre Baskerville", serif;
+    margin-bottom: 5rem;
+}
+
+.main-courses > div > section:not(:last-child) {
+    margin-bottom: 7rem;
+}
+
+.main-courses .course-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+.main-courses .course-title h3 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.main-courses .course-title a {
+    font-size: 2.2rem;
+    color: skyblue;
+}
+
+.mc-card-container {
+    display: flex;
+}
+
+.mc-card {
+    flex: 30%;
+    margin: 0 1.5rem;
+    border: 0.2rem solid;
+    border-radius: 1rem;
+    transition: 0.4s ease-in-out all;
+    box-shadow: 0 0 0.3rem 0.5rem lightslategray;
+}
+
+.mc-card:hover {
+    cursor: pointer;
+    box-shadow: 0 0 0.9rem 0.7rem lightcyan;
+    transform: translateY(-1.7rem);
+}
+
+.mc-card-head {
+    background: skyblue;
+    min-height: 3.5rem;
+    border-top-left-radius: 0.7rem;
+    border-top-right-radius: 0.7rem;
+}
+
+.mc-card-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.3rem;
+}
+
+.mc-card-body img {
+    width: 60%;
+    border-radius: 0.7rem;
+}
+
+.mc-card-footer {
+    padding: 2%;
+    min-height: 18rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.mc-card h4 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #123145;
+    margin-bottom: 1.3rem;
+    text-decoration: underline;
+    text-decoration-color: skyblue;
+    text-decoration-thickness: 0.3rem;
+}
+
+.mc-card p {
+    font-size: 1.4rem;
+    line-height: 1.7;
+}

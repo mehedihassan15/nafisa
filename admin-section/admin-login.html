@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/admin-lodin.css">
+
+    <title>ABC Admin Login</title>
+</head>
+
+<body>
+
+    <!-- title section -->
+    <h3>ABC Learning Center</h3>
+    <h5>If you are one of the Admin of ABC Learning Center, Please...</h5>
+    <div class="box">
+        <a href="#divOne" class="button">Admin Panel</a>
+    </div>
+
+
+
+    <!-- popup section -->
+    <div class="overlay" id="divOne">
+        <div class="wrapper">
+            <h2 id="err-title">Please confirm your identity</h2>
+            <a href="#" class="close">&times;</a>
+            <div class="content">
+                <div class="container">
+                    <form action="">
+                        <div>
+                            <label for="username">Username</label>
+                            <input type="text" id="username" placeholder="input your username" required>
+                        </div>
+                        <div>
+                            <label for="password">Password</label>
+                            <input type="password" id="password" placeholder="input your password" required>
+                        </div>
+                        <div>
+                            <input type="submit" value="Log In">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- onbody script -->
+    <script>
+        var form = document.querySelector('form');
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const userName = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+            const errMessage = document.getElementById('err-title');
+
+            if (userName === "abc@admin" && password === "abc@admin-access") {
+                window.location = "./html/reg-back-info.html"
+            } else {
+                errMessage.innerText = "You're not an Admin"
+                errMessage.style.color = "red";
+            }
+        });
+    </script>
+
+</body>
+
+</html>

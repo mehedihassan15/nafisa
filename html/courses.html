@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- meta browser section -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- meta developer section -->
+    <meta name="developer" content="Mehedi Hassan">
+    <meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript">
+    <meta name="author" content="ABC Learning Center">
+    <meta name="description"
+        content="This page has been made for ABC Learning Center for helping the authority can easily maintain their students and staff, courses and batches, upcoming events, and university pieces of information.">
+
+
+
+    <!-- icon style link -->
+    <link rel="icon" href="../images/icon.png" type="jpg/gif/png">
+
+    <!-- main stylesheet -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+    <!-- this page stylesheet -->
+    <link rel="stylesheet" type="text/css" href="../css/course.css">
+
+
+    <!-- responsive stylesheet -->
+    <link rel="stylesheet" media="screen and (min-width: 1200px)" href="../css-res/res-exl.css">
+    <link rel="stylesheet" media="screen and (max-width: 1200px)" href="../css-res/res-exl.css">
+    <link rel="stylesheet" media="screen and (max-width: 992px)" href="../css-res/res-lg.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="../css-res/res-md.css">
+    <link rel="stylesheet" media="screen and (max-width: 600px)" href="../css-res/res-sd.css">
+    <link rel="stylesheet" media="screen and (max-width: 375px)" href="../css-res/res-sm.css">
+
+
+    <!-- fontawesome cdn v6.1.1 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <title>Courses</title>
+
+</head>
+
+<body>
+
+    <!-- header section starts here -->
+    <header>
+
+        <!-- section top -->
+        <section class="header-section-top">
+
+            <div class="header-sec-top-left">
+                <div class="logo">
+                    <a href="../index.html">
+                        <img src="../images/header/logo.png" alt="Logo of the institute">
+                    </a>
+                </div>
+                <div class="title">
+                    <h1><a href="../index.html">ABC Learning Center</a></h1>
+                </div>
+            </div>
+
+            <div class="header-sec-top-right">
+                <div class="search-bar">
+                    <input type="search" name="seachbar" id="searchbar" placeholder="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="sign-in-up">
+                    <button class="btn reg-btn" type="button" value="sign-up"
+                        onclick="window.open('../html/register.html')">Register</button>
+                </div>
+            </div>
+
+        </section>
+
+
+
+        <!-- section bottom -->
+        <section class="header-section-bottom" id="scrollstop">
+
+            <div class="header-sec-btm-left">
+                <i class="fa-solid fa-bars-staggered fa-4x" id="menu-bar"></i>
+                <nav>
+                    <nav-bar>
+                        <nav-menu class="hidden" id="menu">
+                            <ul>
+                                <li><a href="../index.html">Home</a></li>
+                                <li><a href="./about-us.html">About Us</a></li>
+                                <li><a href="./contact-us.html">Contact us</a></li>
+                                <li><a href="./courses.html">Courses</a></li>
+                                <li>
+                                    <div class="schedule-container">
+                                        <a>Course Schedule</a>
+                                        <div class="schedule">
+                                            <a href="./course-schedule_upcoming-batch.html">Upcoming Batch</a>
+                                            <a href="./course-schedule_class-schedule.html">Class Schedule</a>
+                                        </div>
+                                    </div>
+
+                                </li>
+                            </ul>
+                        </nav-menu>
+                    </nav-bar>
+                </nav>
+            </div>
+
+            <div class="header-sec-btm-right">
+                <p>Have questions? <i class="fa-solid fa-envelope"></i> <a
+                        href="mailto:contact@abclearning.com?subject=Have%20Questions&body=Thanks%20for%20mailing%20us%20we%20will%20contact%20you%20soon.">contact@abclearning.com</a>
+                </p>
+            </div>
+
+        </section>
+
+    </header>
+    <!-- header section ends here -->
+
+
+
+
+
+
+    <!-- main section starts here -->
+    <main class="main-courses">
+
+
+        <!-- all courses container -->
+        <div>
+            <h2>All Courses</h2>
+
+            <!-- frontend development courses -->
+            <section class="frontend">
+                <div class="course-title">
+                    <h3>frontend development courses</h3>
+                    <a href="./comingsoon.html">view all</a>
+                </div>
+
+                <div class="mc-card-container">
+
+                    <!-- card one -->
+                    <div class="mc-card" onclick="window.open('./courses-html.html')">
+                        <div class="mc-card-head"></div>
+                        <div class="mc-card-body">
+                            <img src="../images/content/course-cards/fnt-1.png" alt="html course">
+                        </div>
+                        <div class="mc-card-footer">
+                            <h4>HTML Course</h4>
+                            <p>HTML (HyperText Markup Language) is the code that is used to structure a web page and its
+                                content. For example, content
+                                could be structured within a set of paragraphs, a list of bulleted points, or using
+                                images and data tables.</p>
+                        </div>
+                    </div>
+
+
+
+                    <!-- card two -->
+                    <div class="mc-card" onclick="window.open('./courses-css.html')">
+                        <div class="mc-card-head"></div>
+                        <div class="mc-card-body">
+                            <img src="../images/content/course-cards/fnt-2.png" alt="css course">
+                        </div>
+                        <div class="mc-card-footer">
+                            <h4>CSS Course</h4>
+                            <p>CSS stands for Cascading Style Sheets · CSS describes how HTML elements are to be
+                                displayed on screen, paper, or in
+                                other media · CSS saves a lot of work.</p>
+                        </div>
+                    </div>
+
+
+
+                    <!-- card three -->
+                    <div class="mc-card" onclick="window.open('./comingsoon.html')">
+                        <div class="mc-card-head"></div>
+                        <div class="mc-card-body">
+                            <img src="../images/content/course-cards/fnt-3.png" alt="javascript course">
+                        </div>
+                        <div class="mc-card-footer">
+                            <h4>JavaScript Course</h4>
+                            <p>JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming
+                                language with first-class functions.
+                                While it is most well-known as the scripting language for Web pages, many non-browser
+                                environments also use it, such as
+                                Node.js, Apache CouchDB and Adobe Acrobat.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+
+
+            <!-- backend development courses -->
+            <section class="backend">
+                <div class="course-title">
+                    <h3>backend development courses</h3>
+                    <a href="./comingsoon.html">view all</a>
+                </div>
+
+                <div class="mc-card-container">
+
+                    <!-- card one -->
+                    <div class="mc-card" onclick="window.open('./comingsoon.html')">
+                        <div class="mc-card-head"></div>
+                        <div class="mc-card-body">
+                            <img src="../images/content/course-cards/bck-1.png" alt="php course">
+                        </div>
+                        <div class="mc-card-footer">
+                            <h4>PHP Course</h4>
+                            <p>What is PHP and why it is used?
+                                PHP is a server side scripting language that is embedded in HTML. It is used to manage
+                                dynamic content, databases,
+                                session tracking, even build entire e-commerce sites. It is integrated with a number of
+                                popular databases, including
+                                MySQL, PostgreSQL, Oracle, Sybase, Informix, and Microsoft SQL Server.</p>
+                        </div>
+                    </div>
+
+
+
+                    <!-- card two -->
+                    <div class="mc-card" onclick="window.open('./comingsoon.html')">
+                        <div class="mc-card-head"></div>
+                        <div class="mc-card-body">
+                            <img src="../images/content/course-cards/bck-2.png" alt="laravel course">
+                        </div>
+                        <div class="mc-card-footer">
+                            <h4>Laravel Course</h4>
+                            <p>Laravel is a back-end PHP-based and open-source framework used for building a wide range
+                                of custom web applications.
+                                It's an entirely server-side framework that manages data with the help of
+                                Model-View-Controller (MVC) design which
+                                breaks an application back-end architecture into logical parts.</p>
+                        </div>
+                    </div>
+
+
+
+                    <!-- card three -->
+                    <div class="mc-card" onclick="window.open('./comingsoon.html')">
+                        <div class="mc-card-head"></div>
+                        <div class="mc-card-body">
+                            <img src="../images/content/course-cards/bck-3.png" alt="oracle course">
+                        </div>
+                        <div class="mc-card-footer">
+                            <h4>Oracle Course</h4>
+                            <p>Oracle Database is the first database designed for enterprise grid computing, the most
+                                flexible and cost effective way
+                                to manage information and applications. Enterprise grid computing creates large pools of
+                                industry-standard, modular
+                                storage and servers.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+
+
+            <!-- microsoft office courses -->
+            <section class="ms-office">
+                <div class="course-title">
+                    <h3>microsoft office courses</h3>
+                    <a href="./comingsoon.html">view all</a>
+                </div>
+
+                <div class="mc-card-container">
+
+                    <!-- card one -->
+                    <div class="mc-card" onclick="window.open('./comingsoon.html')">
+                        <div class="mc-card-head"></div>
+                        <div class="mc-card-body">
+                            <img src="../images/content/course-cards/ms-1.png" alt="ms word course">
+                        </div>
+                        <div class="mc-card-footer">
+                            <h4>Microsoft Word</h4>
+                            <p>Microsoft Word is a widely used commercial word processor designed by Microsoft.
+                                Microsoft Word is a component of the
+                                Microsoft Office suite of productivity software, but can also be purchased as a
+                                stand-alone product. Microsoft Word was
+                                initially launched in 1983, and has since been revised numerous times.</p>
+                        </div>
+                    </div>
+
+
+
+                    <!-- card two -->
+                    <div class="mc-card" onclick="window.open('./comingsoon.html')">
+                        <div class="mc-card-head"></div>
+                        <div class="mc-card-body">
+                            <img src="../images/content/course-cards/ms-2.png" alt="ms excel course">
+                        </div>
+                        <div class="mc-card-footer">
+                            <h4>Microsoft Excel</h4>
+                            <p>Microsoft Excel is powerful data visualization and analysis software, which uses
+                                spreadsheets to store, organize, and
+                                track data sets with formulas and functions. Excel is used by marketers, accountants,
+                                data analysts, and other
+                                professionals. It's part of the Microsoft Office suite of products.</p>
+                        </div>
+                    </div>
+
+
+
+                    <!-- card three -->
+                    <div class="mc-card" onclick="window.open('./comingsoon.html')">
+                        <div class="mc-card-head"></div>
+                        <div class="mc-card-body">
+                            <img src="../images/content/course-cards/ms-3.png" alt="ms powerpoint course">
+                        </div>
+                        <div class="mc-card-footer">
+                            <h4>Microsoft PowerPoint</h4>
+                            <p>MS PowerPoint is a program that is covered in the Microsoft Office suite and is bundled
+                                unitedly with Word, Excel, and
+                                other office productivity tools. Microsoft PowerPoint is a powerful slide show
+                                presentation program. MS PowerPoint
+                                applies slides to communicate information rich in multimedia.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+
+
+            <!-- adobe software courses -->
+            <section class="adobe">
+                <div class="course-title">
+                    <h3>adobe software courses</h3>
+                    <a href="./comingsoon.html">view all</a>
+                </div>
+
+                <div class="mc-card-container">
+
+                    <!-- card one -->
+                    <div class="mc-card" onclick="window.open('./comingsoon.html')">
+                        <div class="mc-card-head"></div>
+                        <div class="mc-card-body">
+                            <img src="../images/content/course-cards/adb-1.png" alt="adobe after effects course">
+                        </div>
+                        <div class="mc-card-footer">
+                            <h4>Adobe After Effects</h4>
+                            <p>After Effects opens many more doors for typography, visuals, and 3D animations that are
+                                leaps and bounds cooler than
+                                anything you can do in Premiere. Using After Effects for graphics alone is worth the
+                                time spent learning the software.</p>
+                        </div>
+                    </div>
+
+
+
+                    <!-- card two -->
+                    <div class="mc-card" onclick="window.open('./comingsoon.html')">
+                        <div class="mc-card-head"></div>
+                        <div class="mc-card-body">
+                            <img src="../images/content/course-cards/adb-2.png" alt="adobe xd design course">
+                        </div>
+                        <div class="mc-card-footer">
+                            <h4>Adobe XD</h4>
+                            <p>What is Adobe XD used for? Adobe XD is the Adobe prototyping tool for user experience and
+                                interaction designers. Adobe
+                                XD features are used for creating wireframes, prototypes, and screen designs for digital
+                                products such as websites and
+                                mobile apps.</p>
+                        </div>
+                    </div>
+
+
+
+                    <!-- card three -->
+                    <div class="mc-card" onclick="window.open('./comingsoon.html')">
+                        <div class="mc-card-head"></div>
+                        <div class="mc-card-body">
+                            <img src="../images/content/course-cards/adb-3.png" alt="adobe illustrator course">
+                        </div>
+                        <div class="mc-card-footer">
+                            <h4>Adobe Illustrator</h4>
+                            <p>What is Adobe Illustrator used for?
+                                Image result for adobe illustrator
+                                Adobe Illustrator is the industry standard design app that lets you capture your
+                                creative vision with shapes, color,
+                                effects, and typography. Work across desktop and mobile devices and quickly create
+                                beautiful designs that can go
+                                anywhere—print, web and apps, video and animations, and more.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+
+
+            <!-- mobile application courses -->
+            <section class="mob-app">
+                <div class="course-title">
+                    <h3>mobile application courses</h3>
+                    <a href="./comingsoon.html">view all</a>
+                </div>
+
+                <div class="mc-card-container">
+
+                    <!-- card one -->
+                    <div class="mc-card" onclick="window.open('./comingsoon.html')">
+                        <div class="mc-card-head"></div>
+                        <div class="mc-card-body">
+                            <img src="../images/content/course-cards/mad-1.png" alt="android app development course">
+                        </div>
+                        <div class="mc-card-footer">
+                            <h4>Android Application Development</h4>
+                            <p>You can definitely develop an Android app using Python. And this thing is not only
+                                limited to python, you can in fact
+                                develop Android applications in many more languages other than Java. Yes, in point of
+                                fact, Python on android is a lot
+                                easier than Java and much better when it comes to complexity.</p>
+                        </div>
+                    </div>
+
+
+
+                    <!-- card two -->
+                    <div class="mc-card" onclick="window.open('./comingsoon.html')">
+                        <div class="mc-card-head"></div>
+                        <div class="mc-card-body">
+                            <img src="../images/content/course-cards/mad-2.png" alt="ios app development course">
+                        </div>
+                        <div class="mc-card-footer">
+                            <h4>iOS Application Development</h4>
+                            <p>iOS application development is the process of making mobile applications for Apple
+                                hardware, including iPhone, iPad and
+                                iPod Touch. The software is written in the Swift programming language or Objective-C and
+                                then deployed to the App Store
+                                for users to download.</p>
+                        </div>
+                    </div>
+
+
+
+                    <!-- card three -->
+                    <div class="mc-card" onclick="window.open('./comingsoon.html')">
+                        <div class="mc-card-head"></div>
+                        <div class="mc-card-body">
+                            <img src="../images/content/course-cards/mad-3.png" alt="kaios app development course">
+                        </div>
+                        <div class="mc-card-footer">
+                            <h4>KaiOS Application Development</h4>
+                            <p>KaiOS is a mobile operating system, based on Linux, for keypad feature phones. It is
+                                developed by KaiOS Technologies
+                                (Hong Kong) Limited; a company based in Hong Kong, with largest shareholder being
+                                Chinese multinational electronics
+                                conglomerate TCL Corporation.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
+
+    </main>
+    <!-- main section ends here -->
+
+
+
+
+
+
+    <!-- footer section starts here -->
+    <footer>
+
+        <!-- footer section top -->
+        <section class="footer-section-top">
+            <div>
+                <div>
+                    <h2>Academic & training</h2>
+                    <nav>
+                        <ul>
+                            <li><a href="./comingsoon.html">academic partners</a></li>
+                            <li><a href="./comingsoon.html">exam partners</a></li>
+                            <li><a href="./comingsoon.html">training partners</a></li>
+                            <li><a href="./comingsoon.html">events</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div>
+                    <h2>international</h2>
+                    <nav>
+                        <ul>
+                            <li><a href="./comingsoon.html">entry criteria</a></li>
+                            <li><a href="./comingsoon.html">social life</a></li>
+                            <li><a href="./comingsoon.html">applying for a visa</a></li>
+                            <li><a href="./comingsoon.html">refund policy</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <h2>others</h2>
+                    <nav>
+                        <ul>
+                            <li><a href="./comingsoon.html">testimonials</a></li>
+                            <li><a href="./comingsoon.html">accommodation</a></li>
+                            <li><a href="./comingsoon.html">FAQ</a></li>
+                            <li><a href="./comingsoon.html">blogs</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div>
+                    <h2>Navigation</h2>
+                    <nav>
+                        <ul>
+                            <li><a href="./comingsoon.html">All courses</a></li>
+                            <li><a href="./comingsoon.html">certificate verification</a></li>
+                            <li><a href="./sitemap.html">sitemap</a></li>
+                            <li><a href="./privacy-policy.html">privacy & policy</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+        </section>
+
+
+
+        <!-- footer section bottom -->
+        <section class="footer-section-bottom">
+            <div class="footer-sec-btm-top">
+                <p>Copyright &copy; 2022 - All rights reserved by <a href="../index.html">ABC Learning Center</a> .</p>
+            </div>
+            <div class="footer-sec-btm-bottom">
+                <ul>
+                    <li><i class="fa-brands fa-linkedin-in" onclick="window.open('./comingsoon.html')"></i></li>
+                    <li><i class="fa-brands fa-facebook-f" onclick="window.open('./comingsoon.html')"></i></li>
+                    <li><i class="fa-brands fa-twitter" onclick="window.open('./comingsoon.html')"></i></li>
+                    <li><i class="fa-brands fa-google-plus-g" onclick="window.open('./comingsoon.html')"></i></li>
+                </ul>
+            </div>
+        </section>
+
+    </footer>
+    <!-- footer section ends here -->
+
+
+
+
+    <!-- scripts section -->
+    <script type="text/javascript" src="../js/main.js"></script>
+
+</body>
+
+</html>

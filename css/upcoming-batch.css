@@ -1,0 +1,124 @@
+html {
+    font-size: 62.5%;
+}
+
+/*  */
+/*  */
+/* ----------------------------------------------------------section devider-------------------------------------------------------------------------------- */
+/*  */
+/*  */
+
+.ubs-main {
+    margin: 5rem 0;
+}
+
+.ubs-main section {
+    display: flex;
+    flex-direction: column;
+}
+
+/*  */
+/*  */
+/* first div */
+.ubs-main section > div:nth-child(1) {
+    align-self: center;
+}
+
+.ubs-main h2 {
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/*  */
+/*  */
+/* second div */
+.ubs-main section > div:nth-child(2) {
+    align-self: flex-end;
+    margin: 3rem 3.5rem;
+}
+
+/*  */
+/*  */
+/* third div */
+.ubs-main section > div:nth-child(3) {
+    display: flex;
+}
+
+.ubs-main section > div:nth-child(3) > p:nth-child(1) {
+    flex: 50%;
+}
+
+.ubs-main section > div:nth-child(3) > p:nth-child(2) {
+    flex: 50%;
+}
+
+.ubs-main section > div:nth-child(3) p {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 1.7rem;
+}
+
+/*  */
+/*  */
+/* fourth div */
+.ubs-main .ubs-cld-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.ubs-main .ubs-cld-2 {
+    display: flex;
+    margin: 1rem 0;
+}
+
+.ubs-main .ubs-cld-2 > div:nth-child(1) {
+    flex: 41.5%;
+}
+
+.ubs-main .ubs-cld-2 > div:nth-child(2) {
+    flex: 15%;
+    text-align: center;
+}
+
+.ubs-main .ubs-cld-2 > div:nth-child(3) {
+    flex: 15%;
+    text-align: center;
+}
+
+.ubs-main .ubs-cld-2 > div:nth-child(4) {
+    flex: 15%;
+    text-align: center;
+}
+
+.ubs-main .ubs-cld-2 > div:nth-child(2) p {
+    font-weight: bolder;
+}
+
+.ubs-main .ubs-cld-2 p {
+    font-size: 1.7rem;
+}
+
+.ubs-main .ubs-cld-2 span {
+    font-weight: bolder;
+}
+
+.ubs-main input {
+    border: 0.1rem solid lightgray;
+    border-radius: 50rem;
+    padding: 0.7rem 1.5rem;
+    letter-spacing: 0.1rem;
+    background: rgb(243, 238, 238);
+    width: 25rem;
+    text-indent: 1.5rem;
+}
+
+.ubs-main input::placeholder {
+    text-indent: 1.5rem;
+}
+
+#stds {
+    display: none;
+}

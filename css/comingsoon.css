@@ -1,0 +1,103 @@
+html {
+    font-size: 62.5%;
+}
+
+/*  */
+/*  */
+/* ----------------------------------------------------------section devider-------------------------------------------------------------------------------- */
+/*  */
+/*  */
+
+#coming-body {
+    width: 100%;
+}
+
+.coming-soon {
+    width: 100vw;
+    height: 100vh;
+    background: url("../images/content/404/background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 8%;
+    position: relative;
+}
+
+.coming-soon .logo {
+    width: 12rem;
+    padding: 2rem 0;
+    cursor: pointer;
+}
+
+.coming-soon .content {
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    color: #ffffff;
+    margin-top: 5rem;
+}
+
+.coming-soon .content p {
+    font-size: 2.5rem;
+}
+
+.coming-soon .content h1 {
+    font-size: 6.5rem;
+    font-weight: 600;
+}
+
+.coming-soon .content h1 span {
+    color: #ff3753;
+}
+
+.coming-soon .content button {
+    background: transparent;
+    border: 0.2rem solid #ffffff;
+    padding: 1.2rem 2.5rem;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+    cursor: pointer;
+}
+
+.coming-soon .content button img {
+    max-width: 1.5rem;
+    margin-left: 1rem;
+}
+
+.coming-soon .launch-time {
+    display: flex;
+}
+
+.coming-soon .launch-time div {
+    flex-basis: 10rem;
+}
+
+.coming-soon .launch-time div p {
+    font-size: 6rem;
+    margin-bottom: -1.4rem;
+}
+
+.coming-soon .rocket {
+    width: 25rem;
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+    animation: rocket 4s linear infinite;
+}
+
+/*  */
+/*  */
+/* animation section below */
+@keyframes rocket {
+    0% {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    100% {
+        bottom: 105%;
+        opacity: 1;
+    }
+}

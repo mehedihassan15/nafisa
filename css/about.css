@@ -1,0 +1,72 @@
+html {
+    font-size: 62.5%;
+}
+
+/*  */
+/*  */
+/* ----------------------------------------------------------section devider-------------------------------------------------------------------------------- */
+/*  */
+/*  */
+
+.main-about-us {
+    margin: 5rem 0;
+}
+
+.main-about-us > div:not(:last-child) {
+    margin-bottom: 5rem;
+}
+
+.main-about-us h2 {
+    font-size: 2rem;
+}
+
+.main-about-us h3 {
+    font-size: 3rem;
+}
+
+.main-about-us p {
+    font-size: 1.4rem;
+    line-height: 1.7;
+    margin-top: 0.7rem;
+}
+
+.main-about-us .mrg-btm {
+    margin-bottom: 3rem;
+}
+
+.main-about-us .cont-flex {
+    display: flex;
+    align-items: center;
+    background: rgba(211, 211, 211, 0.397);
+    padding: 3rem 5rem;
+    border: solid;
+    max-width: 100%;
+}
+
+.main-about-us .cont-flex > div:nth-child(1) {
+    flex: 30%;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-right: 20rem;
+}
+.main-about-us .cont-flex > div:nth-child(2) {
+    flex: 70%;
+}
+
+.main-about-us .cont-flex > div:nth-child(2) i {
+    font-size: 2rem;
+    margin-right: 3rem;
+}
+
+.main-about-us .cont-flex > div:nth-child(2) a {
+    font-size: 2rem;
+}
+
+.main-about-us .cont-flex > div:nth-child(2) > div:not(:last-child) {
+    margin-bottom: 5rem;
+}
+
+.main-about-us a {
+    color: lightskyblue;
+    font-size: 1.5rem;
+}

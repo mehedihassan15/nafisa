@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Information Table</title>
+
+
+
+    <link rel="stylesheet" href="../css/register-edit-panel.css">
+    <link rel="stylesheet" href="../css/register-edit-table-data.css">
+</head>
+
+<body>
+
+    <!-- navigation panel -->
+    <nav>
+        <div><button id="editPanel">Edit Panel</button></div>
+        <div><button id="logOut">Logout</button></div>
+    </nav>
+
+
+
+
+    <!-- user information table data starts here -->
+    <table>
+
+        <caption>ABC Learning Center User Registration Data Table</caption>
+
+        <thead>
+            <tr>
+                <th id="th-sl-no">SL. No</th>
+                <th>Full Name</th>
+                <th>Email</th>
+                <th>Phone Number</th>
+                <th>Address</th>
+                <th>Gender</th>
+                <th>Educational Status</th>
+                <th>Selected Course</th>
+                <th>Selected Batch</th>
+                <th>Message</th>
+                <th>Action Panel</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <!-- USER Information Display panel -->
+        </tbody>
+
+    </table>
+    <!-- user information table data ends here -->
+
+
+
+
+    <!-- main section starts here -->
+    <section id="toggleSection" class="hidden">
+        <main class="main-sign-up">
+
+            <!-- register form is below -->
+            <form method="get" autocomplete="off" id="formValidation" class="formBackend">
+                <div>
+                    <p>Administrator</p>
+                    <h2 id="addTitle">Add New User Data</h2>
+                </div>
+
+                <div>
+
+                    <!-- personalia section -->
+                    <fieldset>
+                        <legend>Personalia</legend>
+                        <div>
+                            <label for="fname">Full Name:</label>
+                            <input type="text" name="fullName" id="fullName" placeholder="Full name" required>
+                        </div>
+                        <div>
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="email" placeholder="E-mail" required>
+                        </div>
+                        <div>
+                            <label for="tel">Phone Number:</label>
+                            <input type="tel+" name="tel" id="tel" pattern="[0-9]{11}" placeholder="01700123456"
+                                maxlength="11" required>
+                        </div>
+                        <div>
+                            <label for="address">Address:</label>
+                            <input type="text" name="address" id="address" placeholder="Dhaka, Bangladesh" required>
+                        </div>
+                        <div id="gen">
+                            <label for="gender">Gender<span id="clsreq">*</span>:</label>
+                            <select name="gender" id="gender">
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="courses">Education Level<span id="clsreq">*</span>:</label>
+                            <select name="edulevel" id="edulevel" required>
+                                <optgroup label="Phd">
+                                    <option value="phd-on">On going</option>
+                                    <option value="phd-com">Completed</option>
+                                </optgroup>
+
+                                <optgroup label="Post Graduate">
+                                    <option value="pg-on">On going</option>
+                                    <option value="pg-com">Completed</option>
+                                </optgroup>
+
+                                <optgroup label="Under Graduate">
+                                    <option value="gra-on">On going</option>
+                                    <option value="gra-com">Completed</option>
+                                </optgroup>
+
+                                <optgroup label="Grade 9-12">
+                                    <option value="grade12">Grade 12</option>
+                                    <option value="grade11">Grade 11</option>
+                                    <option value="grade10">Grade 10</option>
+                                    <option value="grade9">Grade 9</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="selectedCourses">Select your Course<span id="clsreq">*</span>:</label>
+                            <select name="selectedCourses" id="selectedCourses" required>
+                                <optgroup label="Frontend Development">
+                                    <option value="c-html">HTML Course</option>
+                                    <option value="c-css">CSS Course</option>
+                                    <option value="c-js">JavaScript Course</option>
+                                </optgroup>
+
+                                <optgroup label="Backend Development">
+                                    <option value="c-php">PHP Course</option>
+                                    <option value="c-laravel">Laravel Course</option>
+                                    <option value="c-oracle">Oracle Course</option>
+                                </optgroup>
+
+                                <optgroup label="Microsoft Office">
+                                    <option value="c-word">Microsoft Word</option>
+                                    <option value="c-excel">Microsoft Excel</option>
+                                    <option value="c-ppt">Microsoft PowerPoint</option>
+                                </optgroup>
+
+                                <optgroup label="Adobe Software">
+                                    <option value="c-effects">Adobe After Effects</option>
+                                    <option value="c-xd">Adobe XD</option>
+                                    <option value="c-illustrator">Adobe Illustrator</option>
+                                </optgroup>
+
+                                <optgroup label="Mobile Application">
+                                    <option value="c-android">Android Application Development</option>
+                                    <option value="c-ios">iOS Application Development</option>
+                                    <option value="c-kaios">KaiOS Application Development</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="selectedBatch">Select your Batch<span id="clsreq">*</span>:</label>
+                            <select name="selectedBatch" id="selectedBatch" required>
+                                <optgroup label="Campus Option">
+                                    <option value="offCampus">Off Campus</option>
+                                    <option value="onCampus">On Campus</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div id="messageSection">
+                            <label for="abt-you" id="messagelabel">Message:</label>
+                            <textarea name="message" id="message" rows="10"
+                                placeholder="why you're interested in this, please tell us... (max 350 character)"
+                                maxlength="350" required></textarea>
+                        </div>
+                    </fieldset>
+
+                </div>
+
+                <div id="updateBtn">
+                    <button class="btn btn-scs" type="submit" value="register">Add</button>
+                </div>
+            </form>
+
+        </main>
+    </section>
+    <!-- main section ends here -->
+
+
+
+
+
+    <!-- script section below -->
+
+    <!-- jQuery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+    <!-- onbody script -->
+    <script>
+        // 
+        // 
+        // Admin panel toggle
+        $("#editPanel").click(function () {
+            $('#toggleSection').toggleClass("hidden")
+        });
+
+        // 
+        // 
+        // logout function
+        $('#logOut').click(function () {
+            window.location = " ../admin-login.html";
+        })
+    </script>
+
+
+    <!-- external javascript -->
+    <script src="../javascript/lead-admin-script.js"></script>
+
+</body>
+
+</html>

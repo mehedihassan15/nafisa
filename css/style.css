@@ -1,0 +1,948 @@
+/* google font cdn */
+@import url("https://fonts.googleapis.com/css2?family=Akshar:wght@400;600;700&family=Bebas+Neue&family=Libre+Baskerville&family=Ms+Madi&family=Oswald:wght@400;600&family=Playfair+Display:ital,wght@1,400;1,600&display=swap");
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+/* reset and common section starts here */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-weight: 400;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    background: #fafafa;
+    font-family: "Playfair Display", serif;
+}
+
+body {
+    min-height: 100vh;
+    width: 120rem;
+    max-width: 100%;
+    margin: auto;
+    background: #fff;
+    box-shadow: 0.1rem 0.1rem 0.1rem #c4c4c4, -0.1rem 0 0.1rem #c4c4c4;
+}
+
+h1 {
+    font-family: "Bebas Neue", cursive;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Oswald", sans-serif;
+}
+
+p {
+    font-family: "Akshar", sans-serif;
+}
+
+a {
+    font-family: "Bebas Neue", cursive;
+    cursor: pointer;
+}
+
+.btn {
+    background-color: rgb(136, 162, 179);
+    color: white;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    padding: 0.7rem 1.4rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition: 0.7s ease-in-out all;
+}
+
+.btn:hover {
+    transform: scale(0.9);
+    background-color: lightseagreen;
+}
+
+.btn:active {
+    background: lightskyblue;
+}
+
+.btn:visited {
+    background: purple;
+}
+/* reset and common section ends here */
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/* ==========================================================================================================================================================
+   ==========================================================================================================================================================
+   ==========================================================================================================================================================
+ */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+/* header section stars here */
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1% 3%;
+}
+
+/* --------------------------------------------------------------------------- */
+/* header top section */
+.header-section-top {
+    display: flex;
+    margin-bottom: 1.7rem;
+}
+
+.header-sec-top-left {
+    flex: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.header-sec-top-left div:not(:last-child) {
+    margin-right: 3rem;
+}
+.logo img {
+    width: 6rem;
+}
+
+.title h1 {
+    font-size: 4.5rem;
+}
+
+.title h1 a {
+    color: black;
+}
+
+.header-sec-top-right {
+    flex: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-bar {
+    display: flex;
+    position: relative;
+}
+
+.search-bar input[type="search"] {
+    padding: 0.9rem 1.7rem;
+    max-width: 27rem;
+    width: 27rem;
+    border: 1px solid;
+    border-radius: 0.4rem;
+    text-indent: 1rem;
+}
+
+.search-bar input[type="search"]::placeholder {
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    text-indent: 1rem;
+}
+
+.search-bar i {
+    left: 01rem;
+    position: absolute;
+    align-self: center;
+}
+
+.sign-in-up {
+    justify-self: flex-end;
+}
+
+.sign-in-up button:not(:last-child) {
+    margin-right: 2rem;
+}
+
+.reg-btn {
+    background-color: lightseagreen;
+}
+
+/* --------------------------------------------------------------------------- */
+/* header bottom section */
+.header-section-bottom {
+    display: flex;
+}
+
+#menu-bar {
+    display: none;
+}
+
+.header-sec-btm-left {
+    flex: 50%;
+    z-index: 100;
+}
+
+.header-sec-btm-left ul li {
+    display: inline-block;
+    transition: 0.5s ease-in-out all;
+}
+
+.header-sec-btm-left ul li:not(:last-child) {
+    margin-right: 2rem;
+}
+
+.header-sec-btm-left ul li a {
+    font-size: 2.1rem;
+    color: lightseagreen;
+}
+
+.header-sec-btm-left ul li:hover {
+    transform: scale(1.2);
+}
+
+.schedule-container {
+    position: relative;
+    padding: 0.5rem;
+    width: 13rem;
+}
+
+.schedule {
+    display: none;
+    padding: 0.5rem;
+    width: 13rem;
+    position: absolute;
+    left: 0;
+}
+
+.schedule-container:hover {
+    background: rgb(241, 244, 247);
+}
+
+.schedule-container:hover .schedule {
+    display: block;
+    background: rgb(241, 244, 247);
+}
+
+.header-sec-btm-right {
+    justify-content: space-between;
+}
+
+.header-sec-btm-right p {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.header-sec-btm-right p i {
+    text-indent: 3rem;
+}
+
+.header-sec-btm-right p a {
+    margin-left: 0.5rem;
+    color: lightseagreen;
+    text-transform: lowercase;
+    font-family: "Akshar", sans-serif;
+}
+
+.header-section-bottom.sticky {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    padding: 0.3rem 0.7rem;
+    background: #000;
+    color: white;
+    align-items: center;
+}
+
+.header-section-bottom.sticky .schedule-container:hover {
+    background: none;
+}
+
+.header-section-bottom.sticky .schedule-container:hover .schedule {
+    background: rgb(241, 244, 247, 0.7);
+}
+
+header::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+/* header section ends here */
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/* ==========================================================================================================================================================
+   ==========================================================================================================================================================
+   ==========================================================================================================================================================
+ */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+/* main section starts here */
+main {
+    width: 100%;
+    padding: 1% 3%;
+}
+
+main > section:nth-child(2),
+main > section:nth-child(3),
+main > section:nth-child(4),
+main > section:nth-child(5),
+main > section:nth-child(6),
+main > section:nth-child(7),
+main > section:nth-child(8) {
+    margin: 10rem 0;
+}
+
+/* --------------------------------------------------------------------------- */
+/*  hero section */
+.slider {
+    width: 100%;
+    height: 54rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.slides {
+    width: 100%;
+    height: 54rem;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    width: 100%;
+    transition: 2s;
+}
+
+.slide img {
+    width: 120rem;
+    height: 54rem;
+}
+
+/* --------------------------------------------------------------------------- */
+/* css for manual slide navigation */
+.navigation-manual {
+    position: absolute;
+    bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    width: 120rem;
+    max-width: 100%;
+}
+
+.manual-btn {
+    border: 0.2rem solid #209096;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: 2s ease-in-out;
+    margin: 0.5rem;
+}
+
+.manual-btn:hover {
+    background: #209096;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -100%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -200%;
+}
+
+#radio4:checked ~ .first {
+    margin-left: -300%;
+}
+
+#radio5:checked ~ .first {
+    margin-left: -400%;
+}
+
+/* --------------------------------------------------------------------------- */
+/* css for automatic navigation */
+.navigation-auto {
+    position: absolute;
+    height: 1rem;
+    width: 120rem;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    bottom: 2.9rem;
+}
+
+.navigation-auto div {
+    border: 0.2rem solid #209096;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: 2s ease-in-out;
+    margin: 0.5rem;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+    background: #209096;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+    background: #209096;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+    background: #209096;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+    background: #209096;
+}
+
+#radio5:checked ~ .navigation-auto .auto-btn5 {
+    background: #209096;
+}
+
+/* --------------------------------------------------------------------------- */
+/* popular course section  */
+.card-sec-title h2 {
+    font-size: 3.3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.card-sec-title a {
+    color: lightseagreen;
+    font-size: 1.7rem;
+}
+
+.main-card-container {
+    position: relative;
+    overflow: hidden;
+    margin-top: 4rem;
+    max-width: 100%;
+}
+
+.card-container {
+    display: flex;
+    align-items: center;
+    padding: 5% 1%;
+    max-width: 100%;
+}
+
+#arw-lft {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+}
+
+#arw-rgt {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+}
+
+#arw-lft,
+#arw-rgt {
+    color: lightskyblue;
+    min-height: 41rem;
+    min-width: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+#arw-lft:hover,
+#arw-rgt:hover {
+    color: lightseagreen;
+    cursor: pointer;
+    background: rgba(135, 206, 250, 0.199);
+}
+
+#arw-lft:hover {
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+#arw-rgt:hover {
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+#view {
+    display: none;
+}
+
+/* --------------------------------------------------------------------------- */
+/* card section */
+.card {
+    min-width: 24%;
+    min-height: 41rem;
+    border: 0.2rem solid;
+    border-radius: 1rem;
+    transition: 0.4s ease-in-out all;
+    box-shadow: 0 0 0.3rem 0.5rem lightslategray;
+}
+
+.card:not(:last-child) {
+    margin-right: 1.5rem;
+}
+
+.card:hover {
+    cursor: pointer;
+    box-shadow: 0 0 0.9rem 0.7rem lightcyan;
+    transform: translateY(-1.7rem);
+}
+
+.card-header {
+    background: skyblue;
+    min-height: 3.5rem;
+    border-top-left-radius: 0.7rem;
+    border-top-right-radius: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.card-header h3 {
+    font-weight: bolder;
+    font-size: 1.7rem;
+}
+
+.card-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.3rem;
+    padding: 0.5rem;
+}
+
+.card-body img {
+    width: 40%;
+    border-radius: 0.7rem;
+}
+
+.card-footer {
+    padding: 2%;
+    min-height: 18rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.card h4 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #123145;
+    margin-bottom: 1.3rem;
+    text-decoration: underline;
+    text-decoration-color: skyblue;
+    text-decoration-thickness: 0.3rem;
+}
+
+.card p {
+    font-size: 1.4rem;
+    line-height: 1.7;
+}
+
+.card-footer > p:nth-child(3) {
+    font-weight: bolder;
+}
+
+/* --------------------------------------------------------------------------- */
+/* course instructor section */
+.cour-inst-sec h4 {
+    text-decoration: none;
+}
+
+/* --------------------------------------------------------------------------- */
+/* testimonial section */
+.test-sec h4 {
+    text-decoration: none;
+}
+
+/* --------------------------------------------------------------------------- */
+/*  our acheivemnet section */
+.ach-sec h2 {
+    text-align: center;
+    font-size: 3.3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.ach-card-container {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+}
+
+.ach-card-left {
+    flex: 30%;
+}
+
+.ach-card-left img {
+    max-width: 100%;
+}
+
+.ach-card-right {
+    flex: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: lightgrey;
+    border-radius: 1rem;
+    min-height: 43rem;
+}
+
+.ach-card-right-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10rem 0;
+}
+
+.ach-card-right-child h3 {
+    font-size: 2.7rem;
+    font-weight: bold;
+}
+
+.ach-card-right-child p {
+    font-size: 1.9rem;
+}
+
+.ach-card-right-child > div:nth-child(1) {
+    flex: 20%;
+    min-width: 4rem;
+    margin-right: 1rem;
+    font-size: 3rem;
+    align-self: flex-end;
+}
+
+.ach-card-right-child > div:nth-child(2) {
+    flex: 70%;
+}
+
+/* --------------------------------------------------------------------------- */
+/* apps section */
+.mbl-app-sec {
+    background: lightgray;
+    border-radius: 1rem;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mbl-app-desc {
+    flex: 70%;
+}
+
+.mbl-app-desc-top {
+    margin-bottom: 5rem;
+}
+
+.mbl-app-desc-top h2 {
+    font-size: 3.3rem;
+}
+
+.mbl-app-desc-top ul li:nth-child(2) {
+    text-indent: 4rem;
+}
+
+.mbl-app-desc-bottom ul li {
+    font-size: 2.5rem;
+    line-height: 2.5;
+}
+
+.mbl-app-desc-bottom ul li:nth-child(2) {
+    text-indent: 4rem;
+}
+
+.mbl-app-desc-bottom ul li:nth-child(3) {
+    text-indent: 8rem;
+}
+
+.mbl-app-desc-bottom ul li:nth-child(4) {
+    text-indent: 12rem;
+}
+
+.mbl-app-desc-bottom ul li span {
+    margin-left: 2rem;
+}
+
+.mbl-app-img {
+    flex: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mbl-app-img img {
+    max-width: 85%;
+}
+
+.mbl-app-img > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mbl-app-img > div img {
+    max-width: 35%;
+    display: inline-block;
+    margin: 0 1rem 1rem;
+    transition: transform ease-in-out 0.5s;
+}
+
+.mbl-app-img > div img:hover {
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+/* --------------------------------------------------------------------------- */
+/* media section */
+.media-section {
+    background: rgba(226, 224, 217, 0.253);
+    padding: 3% 1%;
+}
+
+.media-section h2 {
+    font-size: 3.3rem;
+    text-align: center;
+    letter-spacing: 0.3rem;
+}
+
+.media-sec ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 4rem;
+}
+
+.media-sec ul li a h3 {
+    color: lightseagreen;
+    text-decoration-color: lightskyblue;
+}
+
+.media-sec ul li a h3:active {
+    text-decoration-color: red;
+}
+
+.media-sec > div {
+    background: rgba(175, 241, 238, 0.589);
+    border-bottom-right-radius: 25rem;
+    border-top-left-radius: 25rem;
+    max-width: 80%;
+    margin: auto;
+    padding: 0% 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 18rem;
+}
+
+.media-sec h3 {
+    font-size: 2.7rem;
+    margin-bottom: 2rem;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.media-sec p {
+    font-size: 1.7rem;
+    line-height: 2;
+    padding: 5%;
+    text-align: justify;
+    letter-spacing: 0.2rem;
+    font-weight: bold;
+    max-width: 100%;
+}
+
+/* --------------------------------------------------------------------------- */
+/* join us section */
+.join-us-tdy-sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.join-us-top,
+.join-us-bottom {
+    flex: 50%;
+}
+
+.join-us-top h2 {
+    font-size: 3.3rem;
+    letter-spacing: 0.4rem;
+    font-weight: bold;
+    margin-bottom: 7rem;
+}
+
+.join-us-top p {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.join-us-top button {
+    font-size: 1.9rem;
+    background: rgb(52, 180, 219);
+    border: 0.3rem solid lavender;
+    border-style: outset;
+    padding: 1rem 2.2rem;
+    font-weight: bold;
+    color: white;
+    align-self: center;
+    transition: all ease-in-out 0.4s;
+    width: 20rem;
+}
+
+.join-us-top button:hover {
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+.join-us-bottom img {
+    max-width: 100%;
+}
+
+main::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+/* main section ends here */
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/* ==========================================================================================================================================================
+   ==========================================================================================================================================================
+   ==========================================================================================================================================================
+ */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+/* footer section starts here */
+footer {
+    width: 100%;
+    padding: 1% 3%;
+}
+
+.footer-section-top {
+    display: flex;
+    padding: 2rem;
+    margin-bottom: 1.2rem;
+    box-shadow: 0 0 1.7rem 0.1rem grey;
+}
+
+.footer-section-top > div {
+    flex: 50%;
+    display: flex;
+}
+
+.footer-section-top > div > div {
+    flex: 50%;
+}
+
+.footer-section-top div h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.footer-section-top div a {
+    font-size: 1.4rem;
+    color: lightseagreen;
+    font-family: "Akshar", sans-serif;
+    text-transform: capitalize;
+}
+
+.footer-section-top div ul li a {
+    transition: color 0.5s ease-in-out;
+}
+
+.footer-section-top div ul li:not(:last-child) {
+    margin-bottom: 0.7rem;
+}
+
+.footer-section-top div ul li a:hover {
+    color: tomato;
+}
+
+.footer-section-bottom {
+    background-color: #c4c4c4;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0.4rem;
+}
+
+.footer-sec-btm-top p {
+    font-size: 1.7rem;
+}
+
+.footer-sec-btm-top a {
+    color: lightcoral;
+    transition: all 0.7s ease-in-out;
+}
+
+.footer-sec-btm-top a:hover {
+    color: orangered;
+}
+
+.footer-sec-btm-bottom ul li {
+    display: inline-block;
+    font-size: 2.5rem;
+}
+
+.footer-sec-btm-bottom ul li:not(:last-child) {
+    margin-right: 3rem;
+}
+
+.footer-sec-btm-bottom i {
+    cursor: pointer;
+    transition: 0.5s ease-in-out all;
+}
+
+.footer-sec-btm-bottom i:hover {
+    color: lightseagreen;
+}
+
+footer::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+/* footer section ends here */

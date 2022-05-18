@@ -1,0 +1,79 @@
+html {
+    font-size: 62.5%;
+}
+
+/*  */
+/*  */
+/* ----------------------------------------------------------section devider-------------------------------------------------------------------------------- */
+/*  */
+/*  */
+
+.table-container {
+    padding: 0 10%;
+    margin: 7rem auto;
+}
+
+.heading {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table thead {
+    background: lightseagreen;
+}
+
+.table thead tr th {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    color: white;
+    padding: 1.2rem;
+    border: 0.1rem solid #dee2e685;
+}
+
+.table tbody tr td {
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    color: #f1f1f1;
+    padding: 0.8rem;
+    text-align: center;
+    border: 0.1rem solid #dee2e685;
+}
+
+.table tbody tr:nth-child(2n-1) {
+    background: #7a88a0;
+}
+
+.table tbody tr:nth-child(2n) {
+    background: #586e8585;
+}
+
+.table .text_open {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.35px;
+    color: lightskyblue;
+}
+
+.table tbody tr td button {
+    width: 13rem;
+    line-height: 3.5rem;
+    display: inline-block;
+    font-weight: medium;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    cursor: pointer;
+    border: 0.1rem solid transparent;
+    font-size: 1.4rem;
+}
+
+.table tbody tr td button:hover {
+    transform: scale(0.9);
+}

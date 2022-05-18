@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- meta browser section -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- meta developer section -->
+    <meta name="developer" content="Mehedi Hassan">
+    <meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript">
+    <meta name="author" content="ABC Learning Center">
+    <meta name="description"
+        content="This page has been made for ABC Learning Center for helping the authority can easily maintain their students and staff, courses and batches, upcoming events, and university pieces of information.">
+
+
+
+    <!-- icon style link -->
+    <link rel="icon" href="../images/icon.png" type="jpg/gif/png">
+
+
+
+    <!-- cdn for review section -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- main stylesheet -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+    <!-- this page stylesheet -->
+    <link rel="stylesheet" type="text/css" href="../css/course-details.css">
+
+
+    <!-- responsive stylesheet -->
+    <link rel="stylesheet" media="screen and (min-width: 1200px)" href="../css-res/res-exl.css">
+    <link rel="stylesheet" media="screen and (max-width: 1200px)" href="../css-res/res-exl.css">
+    <link rel="stylesheet" media="screen and (max-width: 992px)" href="../css-res/res-lg.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="../css-res/res-md.css">
+    <link rel="stylesheet" media="screen and (max-width: 600px)" href="../css-res/res-sd.css">
+    <link rel="stylesheet" media="screen and (max-width: 375px)" href="../css-res/res-sm.css">
+
+
+    <!-- fontawesome cdn v6.1.1 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <title>Course | HTML</title>
+
+</head>
+
+<body>
+
+    <!-- header section starts here -->
+    <header>
+
+        <!-- section top -->
+        <section class="header-section-top">
+
+            <div class="header-sec-top-left">
+                <div class="logo">
+                    <a href="../index.html">
+                        <img src="../images/header/logo.png" alt="Logo of the institute">
+                    </a>
+                </div>
+                <div class="title">
+                    <h1><a href="../index.html">ABC Learning Center</a></h1>
+                </div>
+            </div>
+
+            <div class="header-sec-top-right">
+                <div class="search-bar">
+                    <input type="search" name="seachbar" id="searchbar" placeholder="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="sign-in-up">
+                    <button class="btn reg-btn" type="button" value="sign-up"
+                        onclick="window.open('../html/register.html')">Register</button>
+                </div>
+            </div>
+
+        </section>
+
+
+
+        <!-- section bottom -->
+        <section class="header-section-bottom" id="scrollstop">
+
+            <div class="header-sec-btm-left">
+                <i class="fa-solid fa-bars-staggered fa-4x" id="menu-bar"></i>
+                <nav>
+                    <nav-bar>
+                        <nav-menu class="hidden" id="menu">
+                            <ul>
+                                <li><a href="../index.html">Home</a></li>
+                                <li><a href="./about-us.html">About Us</a></li>
+                                <li><a href="./contact-us.html">Contact us</a></li>
+                                <li><a href="./courses.html">Courses</a></li>
+                                <li>
+                                    <div class="schedule-container">
+                                        <a>Course Schedule</a>
+                                        <div class="schedule">
+                                            <a href="./course-schedule_upcoming-batch.html">Upcoming Batch</a>
+                                            <a href="./course-schedule_class-schedule.html">Class Schedule</a>
+                                        </div>
+                                    </div>
+
+                                </li>
+                            </ul>
+                        </nav-menu>
+                    </nav-bar>
+                </nav>
+            </div>
+
+            <div class="header-sec-btm-right">
+                <p>Have questions? <i class="fa-solid fa-envelope"></i> <a
+                        href="mailto:contact@abclearning.com?subject=Have%20Questions&body=Thanks%20for%20mailing%20us%20we%20will%20contact%20you%20soon.">contact@abclearning.com</a>
+                </p>
+            </div>
+
+        </section>
+
+    </header>
+    <!-- header section ends here -->
+
+
+
+
+
+
+    <!-- main section starts here -->
+    <main class="course-details">
+
+        <!-- hero-section -->
+        <section class="cd-hero">
+            <img src="../images/content/details/det-hero-img.png" alt="a simple background image">
+            <div>
+                <h2>Learn HTML</h2>
+                <button class="en-btn" onclick="window.open('./html-course-schedule.html')">Enroll Now</button>
+            </div>
+        </section>
+
+
+
+        <!-- course overview section -->
+        <section class="cd-overview">
+            <h3>Overview</h3>
+            <div class="cd-ovw-flex">
+                <div class="cd-ovw-child-1">
+                    <div>
+                        <h4>Why Learn HTML?</h4>
+                        <p>HTML is the foundation of all web pages. Without HTML, you wouldn’t be able to organize text
+                            or
+                            add images or videos to
+                            your web pages. HTML is the beginning of everything you need to know to create engaging web
+                            pages!</p>
+                    </div>
+                    <div>
+                        <h4>Take-Away Skills</h4>
+                        <p>You will learn all the common HTML tags used to structure HTML pages, the skeleton of all
+                            websites. You will also be
+                            able to create HTML tables to present tabular data efficiently.</p>
+                    </div>
+
+                </div>
+                <div class="cd-ovw-child-2">
+                    <div>
+                        <p onclick="window.open('./register.html')">Join</p>
+                        <p>5,293,189</p>
+                        <p>people who have taken this course</p>
+                    </div>
+                    <div>
+                        <p>Time to Complete</p>
+                        <p>9 Hours</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- course syllabus section -->
+        <section class="cd-syllabus">
+            <h3>Syllabus</h3>
+            <div class="cd-slybs-flex">
+                <div class="cd-slybs-child-1">
+                    <div>
+                        <h4>Course Description</h4>
+                        <p>Learn the basics of HTML5 and start building & editing web pages.</p>
+                    </div>
+                    <div>
+                        <h5>Elements and Structure</h5>
+                        <p>2 lessons, 2 quizzes, 1 project</p>
+                    </div>
+                    <div>
+                        <h5>Table</h5>
+                        <p>2 lessons, 1 quizzes, 1 project</p>
+                    </div>
+                    <div>
+                        <h5>Form</h3>
+                            <p>3 lessons, 2 quizzes, 2 project</p>
+                    </div>
+                    <div>
+                        <h5>Semantic HTML</h3>
+                            <p>2 lessons, 2 quizzes, 1 project</p>
+                    </div>
+                </div>
+
+                <div class="cd-slybs-child-2">
+                    <div>
+                        <h4>Details</h4>
+                        <p>Earn a <a href="./comingsoon.html">certificate</a> of completion</p>
+                        <p>9 hours to complete in total
+                            Beginner</p>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="../images/content/course-details/cor-ins-1.png" alt="course instructor image">
+                        </div>
+                        <h6>Kianna Reina</h6>
+                        <p>Course instructor</p>
+                        <p>CEO, TechTalker360
+                            CSE, MUST</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- course review section -->
+        <section class="cd-review">
+            <h3>Review</h3>
+            <div>
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-solid fa-star-half-stroke fa-2x"></i>
+                <i class="fa-regular fa-star fa-2x"></i>
+            </div>
+
+            <div class="cd-rw-card-container">
+
+                <div class="wrapper">
+                    <div class="carousel owl-carousel">
+
+                        <!-- card one -->
+                        <div class="cd-rw-card">
+                            <div class="quote"><img src="../images/content/course-details/quote.png"
+                                    alt="fliped quote marks">
+                            </div>
+                            <div class="cd-rw-card-head">
+                                <div>
+                                    <img src="../images/content/course-details/rev-img-1.png" alt="reviewer image">
+                                </div>
+                                <div>
+                                    <h4>Tara Jaylin</h4>
+                                    <h5>Software Developer</h5>
+                                </div>
+                            </div>
+                            <div class="cd-rw-card-body">
+                                <p>Fostering a love for learning is the goal at the core of every teacher’s pedagogy.
+                                    Ensuring
+                                    your students feel they can
+                                    confidently navigate their learning journey’s ups and downs is a big part of that,
+                                    making it
+                                    incredibly important to
+                                    help your students feel safe while challenging</p>
+                            </div>
+                        </div>
+
+
+
+
+                        <!-- card two -->
+                        <div class="cd-rw-card">
+                            <div class="quote"><img src="../images/content/course-details/quote.png"
+                                    alt="fliped quote marks">
+                            </div>
+                            <div class="cd-rw-card-head">
+                                <div>
+                                    <img src="../images/content/course-details/rev-img-2.png" alt="reviewer image">
+                                </div>
+                                <div>
+                                    <h4>Emma Addison</h4>
+                                    <h5>Database Administrator</h5>
+                                </div>
+                            </div>
+                            <div class="cd-rw-card-body">
+                                <p>Kids need a lot of reassurance along the way, and there’s evidence that the sooner
+                                    they
+                                    get
+                                    to hear from you, the
+                                    better. One research project completed at the University of Minnesota shows that
+                                    immediate
+                                    feedback was linked to
+                                    students better understanding the task at hand.</p>
+                            </div>
+                        </div>
+
+
+
+
+                        <!-- card three -->
+                        <div class="cd-rw-card">
+                            <div class="quote"><img src="../images/content/course-details/quote.png"
+                                    alt="fliped quote marks">
+                            </div>
+                            <div class="cd-rw-card-head">
+                                <div>
+                                    <img src="../images/content/course-details/rev-img-3.png" alt="reviewer image">
+                                </div>
+                                <div>
+                                    <h4>Kelly Liliana</h4>
+                                    <h5>Computer Network Architect</h5>
+                                </div>
+                            </div>
+                            <div class="cd-rw-card-body">
+                                <p>Failure should always be an option in your classroom, and it’s important to foster a
+                                    classroom environment where kids
+                                    can feel comfortable getting it wrong at least some of the time. Some students don’t
+                                    even
+                                    want to attempt tricky
+                                    questions for fear of looking stupid for not knowing. </p>
+                            </div>
+                        </div>
+
+
+
+
+                        <!-- card one -->
+                        <div class="cd-rw-card">
+                            <div class="quote"><img src="../images/content/course-details/quote.png"
+                                    alt="fliped quote marks">
+                            </div>
+                            <div class="cd-rw-card-head">
+                                <div>
+                                    <img src="../images/content/course-details/rev-img-4.png" alt="reviewer image">
+                                </div>
+                                <div>
+                                    <h4>Tara Jaylin</h4>
+                                    <h5>Software Developer</h5>
+                                </div>
+                            </div>
+                            <div class="cd-rw-card-body">
+                                <p>Fostering a love for learning is the goal at the core of every teacher’s pedagogy.
+                                    Ensuring
+                                    your students feel they can
+                                    confidently navigate their learning journey’s ups and downs is a big part of that,
+                                    making it
+                                    incredibly important to
+                                    help your students feel safe while challenging</p>
+                            </div>
+                        </div>
+
+
+
+
+                        <!-- card two -->
+                        <div class="cd-rw-card">
+                            <div class="quote"><img src="../images/content/course-details/quote.png"
+                                    alt="fliped quote marks">
+                            </div>
+                            <div class="cd-rw-card-head">
+                                <div>
+                                    <img src="../images/content/course-details/rev-img-5.png" alt="reviewer image">
+                                </div>
+                                <div>
+                                    <h4>Emma Addison</h4>
+                                    <h5>Database Administrator</h5>
+                                </div>
+                            </div>
+                            <div class="cd-rw-card-body">
+                                <p>Kids need a lot of reassurance along the way, and there’s evidence that the sooner
+                                    they
+                                    get
+                                    to hear from you, the
+                                    better. One research project completed at the University of Minnesota shows that
+                                    immediate
+                                    feedback was linked to
+                                    students better understanding the task at hand.</p>
+                            </div>
+                        </div>
+
+
+
+
+                        <!-- card three -->
+                        <div class="cd-rw-card">
+                            <div class="quote"><img src="../images/content/course-details/quote.png"
+                                    alt="fliped quote marks">
+                            </div>
+                            <div class="cd-rw-card-head">
+                                <div>
+                                    <img src="../images/content/course-details/rev-img-6.png" alt="reviewer image">
+                                </div>
+                                <div>
+                                    <h4>Kelly Liliana</h4>
+                                    <h5>Computer Network Architect</h5>
+                                </div>
+                            </div>
+                            <div class="cd-rw-card-body">
+                                <p>Failure should always be an option in your classroom, and it’s important to foster a
+                                    classroom environment where kids
+                                    can feel comfortable getting it wrong at least some of the time. Some students don’t
+                                    even
+                                    want to attempt tricky
+                                    questions for fear of looking stupid for not knowing. </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+    <!-- main section ends here -->
+
+
+
+
+
+
+    <!-- footer section starts here -->
+    <footer>
+
+        <!-- footer section top -->
+        <section class="footer-section-top">
+            <div>
+                <div>
+                    <h2>Academic & training</h2>
+                    <nav>
+                        <ul>
+                            <li><a href="./comingsoon.html">academic partners</a></li>
+                            <li><a href="./comingsoon.html">exam partners</a></li>
+                            <li><a href="./comingsoon.html">training partners</a></li>
+                            <li><a href="./comingsoon.html">events</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div>
+                    <h2>international</h2>
+                    <nav>
+                        <ul>
+                            <li><a href="./comingsoon.html">entry criteria</a></li>
+                            <li><a href="./comingsoon.html">social life</a></li>
+                            <li><a href="./comingsoon.html">applying for a visa</a></li>
+                            <li><a href="./comingsoon.html">refund policy</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <h2>others</h2>
+                    <nav>
+                        <ul>
+                            <li><a href="./comingsoon.html">testimonials</a></li>
+                            <li><a href="./comingsoon.html">accommodation</a></li>
+                            <li><a href="./comingsoon.html">FAQ</a></li>
+                            <li><a href="./comingsoon.html">blogs</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div>
+                    <h2>Navigation</h2>
+                    <nav>
+                        <ul>
+                            <li><a href="./comingsoon.html">All courses</a></li>
+                            <li><a href="./comingsoon.html">certificate verification</a></li>
+                            <li><a href="./sitemap.html">sitemap</a></li>
+                            <li><a href="./privacy-policy.html">privacy & policy</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+        <!-- footer section bottom -->
+        <section class="footer-section-bottom">
+            <div class="footer-sec-btm-top">
+                <p>Copyright &copy; 2022 - All rights reserved by <a href="../index.html">ABC Learning Center</a> .</p>
+            </div>
+            <div class="footer-sec-btm-bottom">
+                <ul>
+                    <li><i class="fa-brands fa-linkedin-in" onclick="window.open('./comingsoon.html')"></i></li>
+                    <li><i class="fa-brands fa-facebook-f" onclick="window.open('./comingsoon.html')"></i></li>
+                    <li><i class="fa-brands fa-twitter" onclick="window.open('./comingsoon.html')"></i></li>
+                    <li><i class="fa-brands fa-google-plus-g" onclick="window.open('./comingsoon.html')"></i></li>
+                </ul>
+            </div>
+        </section>
+
+    </footer>
+    <!-- footer section ends here -->
+
+
+
+
+    <!-- scripts section -->
+    <script type="text/javascript" src="../js/main.js"></script>
+
+    <!-- onbody script -->
+    <script type="text/javascript">
+        $(".carousel").owlCarousel({
+            loop: true,
+            margin: 15,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            autoplayHoverPause: true,
+            nav: true,
+            navTest: ["<i class='fa-solid fa-chevron-left'></i>", "<i class='fa-solid fa-chevron-right'></i>"],
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                600: {
+                    items: 2,
+                },
+                1000: {
+                    items: 3,
+                }
+            }
+        })
+    </script>
+
+</body>
+
+</html>

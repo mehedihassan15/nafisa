@@ -1,0 +1,38 @@
+html {
+    font-size: 62.5%;
+}
+
+/*  */
+/*  */
+/* ----------------------------------------------------------section devider-------------------------------------------------------------------------------- */
+/*  */
+/*  */
+
+.main-sitemap {
+    margin: 5rem 0;
+}
+
+.main-sitemap ul {
+    margin-left: 5rem;
+}
+
+.main-sitemap ul li {
+    font-size: 2.5rem;
+    line-height: 2.1;
+}
+
+.main-sitemap .ul-indent {
+    margin-bottom: 3rem;
+}
+
+.main-sitemap .ul-indent li {
+    line-height: 1;
+}
+
+.main-sitemap a {
+    color: lightskyblue;
+}
+
+.main-sitemap a:hover {
+    color: rgb(35, 143, 211);
+}

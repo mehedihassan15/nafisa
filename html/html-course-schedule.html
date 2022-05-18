@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- meta browser section -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- meta developer section -->
+    <meta name="developer" content="Mehedi Hassan">
+    <meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript">
+    <meta name="author" content="ABC Learning Center">
+    <meta name="description"
+        content="This page has been made for ABC Learning Center for helping the authority can easily maintain their students and staff, courses and batches, upcoming events, and university pieces of information.">
+
+
+
+    <!-- icon style link -->
+    <link rel="icon" href="../images/icon.png" type="jpg/gif/png">
+
+    <!-- main stylesheet -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+    <!-- this page stylesheet -->
+    <link rel="stylesheet" type="text/css" href="../css/course-details-schedule.css">
+
+
+    <!-- responsive stylesheet -->
+    <link rel="stylesheet" media="screen and (min-width: 1200px)" href="../css-res/res-exl.css">
+    <link rel="stylesheet" media="screen and (max-width: 1200px)" href="../css-res/res-exl.css">
+    <link rel="stylesheet" media="screen and (max-width: 992px)" href="../css-res/res-lg.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="../css-res/res-md.css">
+    <link rel="stylesheet" media="screen and (max-width: 600px)" href="../css-res/res-sd.css">
+    <link rel="stylesheet" media="screen and (max-width: 375px)" href="../css-res/res-sm.css">
+
+
+    <!-- fontawesome cdn v6.1.1 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <title>HTML Course Schedule</title>
+
+</head>
+
+<body>
+
+    <!-- header section starts here -->
+    <header>
+
+        <!-- section top -->
+        <section class="header-section-top">
+
+            <div class="header-sec-top-left">
+                <div class="logo">
+                    <a href="../index.html">
+                        <img src="../images/header/logo.png" alt="Logo of the institute">
+                    </a>
+                </div>
+                <div class="title">
+                    <h1><a href="../index.html">ABC Learning Center</a></h1>
+                </div>
+            </div>
+
+            <div class="header-sec-top-right">
+                <div class="search-bar">
+                    <input type="search" name="seachbar" id="searchbar" placeholder="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="sign-in-up">
+                    <button class="btn reg-btn" type="button" value="sign-up"
+                        onclick="window.open('../html/register.html')">Register</button>
+                </div>
+            </div>
+
+        </section>
+
+
+
+        <!-- section bottom -->
+        <section class="header-section-bottom" id="scrollstop">
+
+            <div class="header-sec-btm-left">
+                <i class="fa-solid fa-bars-staggered fa-4x" id="menu-bar"></i>
+                <nav>
+                    <nav-bar>
+                        <nav-menu class="hidden" id="menu">
+                            <ul>
+                                <li><a href="../index.html">Home</a></li>
+                                <li><a href="./about-us.html">About Us</a></li>
+                                <li><a href="./contact-us.html">Contact us</a></li>
+                                <li><a href="./courses.html">Courses</a></li>
+                                <li>
+                                    <div class="schedule-container">
+                                        <a>Course Schedule</a>
+                                        <div class="schedule">
+                                            <a href="./course-schedule_upcoming-batch.html">Upcoming Batch</a>
+                                            <a href="./course-schedule_class-schedule.html">Class Schedule</a>
+                                        </div>
+                                    </div>
+
+                                </li>
+                            </ul>
+                        </nav-menu>
+                    </nav-bar>
+                </nav>
+            </div>
+
+            <div class="header-sec-btm-right">
+                <p>Have questions? <i class="fa-solid fa-envelope"></i> <a
+                        href="mailto:contact@abclearning.com?subject=Have%20Questions&body=Thanks%20for%20mailing%20us%20we%20will%20contact%20you%20soon.">contact@abclearning.com</a>
+                </p>
+            </div>
+
+        </section>
+
+    </header>
+    <!-- header section ends here -->
+
+
+
+
+
+
+    <!-- main section starts here -->
+    <main class="main-course-details-schedule">
+
+        <div class="table-container">
+            <h1 class="heading">HTML Course Schedule</h1>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Start Date</th>
+                        <th>Start / End Time</th>
+                        <th>Batch Type</th>
+                        <th>Training Mode</th>
+                        <th>Batch Status</th>
+                        <th>#</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Start Date">8 April, 2022</td>
+                        <td data-label="Start / End Time">09:00 - 13:00 (GMT6+)</td>
+                        <td data-label="Batch Type">Weekend</td>
+                        <td data-label="Training Mode">Online Training</td>
+                        <td data-label="Batch Status"><span class="text_open">[ Closed ]</span></td>
+                        <td data-label="#"><button onclick="window.open('./register.html')" disabled>Enroll Now</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td data-label="Start Date">16 April, 2022</td>
+                        <td data-label="Start / End Time">09:00 - 13:00 (GMT6+)</td>
+                        <td data-label="Batch Type">Weekend</td>
+                        <td data-label="Training Mode">Online Training</td>
+                        <td data-label="Batch Status"><span class="text_open">[ Closed ]</span></td>
+                        <td data-label="#"><button onclick="window.open('./register.html')" disabled>Enroll Now</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td data-label="Start Date">24 April, 2022</td>
+                        <td data-label="Start / End Time">09:00 - 13:00 (GMT6+)</td>
+                        <td data-label="Batch Type">Weekend</td>
+                        <td data-label="Training Mode">Online Training</td>
+                        <td data-label="Batch Status"><span class="text_open">[ Closed ]</span></td>
+                        <td data-label="#"><button onclick="window.open('./register.html')" disabled>Enroll Now</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td data-label="Start Date">3 May, 2022</td>
+                        <td data-label="Start / End Time">09:00 - 13:00 (GMT6+)</td>
+                        <td data-label="Batch Type">Weekend</td>
+                        <td data-label="Training Mode">Online Training</td>
+                        <td data-label="Batch Status"><span class="text_open">[ Closed ]</span></td>
+                        <td data-label="#"><button onclick="window.open('./register.html')" disabled>Enroll Now</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td data-label="Start Date">12 May, 2022</td>
+                        <td data-label="Start / End Time">09:00 - 13:00 (GMT6+)</td>
+                        <td data-label="Batch Type">Weekend</td>
+                        <td data-label="Training Mode">Online Training</td>
+                        <td data-label="Batch Status"><span class="text_open">[ Open ]</span></td>
+                        <td data-label="#"><button onclick="window.open('./register.html')">Enroll Now</button></td>
+                    </tr>
+
+                    <tr>
+                        <td data-label="Start Date">21 May, 2022</td>
+                        <td data-label="Start / End Time">09:00 - 13:00 (GMT6+)</td>
+                        <td data-label="Batch Type">Weekend</td>
+                        <td data-label="Training Mode">Online Training</td>
+                        <td data-label="Batch Status"><span class="text_open">[ Open ]</span></td>
+                        <td data-label="#"><button onclick="window.open('./register.html')">Enroll Now</button></td>
+                    </tr>
+
+                    <tr>
+                        <td data-label="Start Date">30 May, 2022</td>
+                        <td data-label="Start / End Time">09:00 - 13:00 (GMT6+)</td>
+                        <td data-label="Batch Type">Weekend</td>
+                        <td data-label="Training Mode">Online Training</td>
+                        <td data-label="Batch Status"><span class="text_open">[ Open ]</span></td>
+                        <td data-label="#"><button onclick="window.open('./register.html')">Enroll Now</button></td>
+                    </tr>
+
+                    <tr>
+                        <td data-label="Start Date">1 June, 2022</td>
+                        <td data-label="Start / End Time">09:00 - 13:00 (GMT6+)</td>
+                        <td data-label="Batch Type">Weekend</td>
+                        <td data-label="Training Mode">Online Training</td>
+                        <td data-label="Batch Status"><span class="text_open">[ Open ]</span></td>
+                        <td data-label="#"><button onclick="window.open('./register.html')">Enroll Now</button></td>
+                    </tr>
+
+                    <tr>
+                        <td data-label="Start Date">10 June, 2022</td>
+                        <td data-label="Start / End Time">09:00 - 13:00 (GMT6+)</td>
+                        <td data-label="Batch Type">Weekend</td>
+                        <td data-label="Training Mode">Online Training</td>
+                        <td data-label="Batch Status"><span class="text_open">[ Open ]</span></td>
+                        <td data-label="#"><button onclick="window.open('./register.html')">Enroll Now</button></td>
+                    </tr>
+
+                    <tr>
+                        <td data-label="Start Date">19 June, 2022</td>
+                        <td data-label="Start / End Time">09:00 - 13:00 (GMT6+)</td>
+                        <td data-label="Batch Type">Weekend</td>
+                        <td data-label="Training Mode">Online Training</td>
+                        <td data-label="Batch Status"><span class="text_open">[ Open ]</span></td>
+                        <td data-label="#"><button onclick="window.open('./register.html')">Enroll Now</button></td>
+                    </tr>
+
+                    <tr>
+                        <td data-label="Start Date">28 June, 2022</td>
+                        <td data-label="Start / End Time">09:00 - 13:00 (GMT6+)</td>
+                        <td data-label="Batch Type">Weekend</td>
+                        <td data-label="Training Mode">Online Training</td>
+                        <td data-label="Batch Status"><span class="text_open">[ Open ]</span></td>
+                        <td data-label="#"><button onclick="window.open('./register.html')">Enroll Now</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </main>
+    <!-- main section ends here -->
+
+
+
+
+
+
+    <!-- footer section starts here -->
+    <footer>
+
+        <!-- footer section top -->
+        <section class="footer-section-top">
+            <div>
+                <div>
+                    <h2>Academic & training</h2>
+                    <nav>
+                        <ul>
+                            <li><a href="./comingsoon.html">academic partners</a></li>
+                            <li><a href="./comingsoon.html">exam partners</a></li>
+                            <li><a href="./comingsoon.html">training partners</a></li>
+                            <li><a href="./comingsoon.html">events</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div>
+                    <h2>international</h2>
+                    <nav>
+                        <ul>
+                            <li><a href="./comingsoon.html">entry criteria</a></li>
+                            <li><a href="./comingsoon.html">social life</a></li>
+                            <li><a href="./comingsoon.html">applying for a visa</a></li>
+                            <li><a href="./comingsoon.html">refund policy</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <h2>others</h2>
+                    <nav>
+                        <ul>
+                            <li><a href="./comingsoon.html">testimonials</a></li>
+                            <li><a href="./comingsoon.html">accommodation</a></li>
+                            <li><a href="./comingsoon.html">FAQ</a></li>
+                            <li><a href="./comingsoon.html">blogs</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div>
+                    <h2>Navigation</h2>
+                    <nav>
+                        <ul>
+                            <li><a href="./comingsoon.html">All courses</a></li>
+                            <li><a href="./comingsoon.html">certificate verification</a></li>
+                            <li><a href="./sitemap.html">sitemap</a></li>
+                            <li><a href="./privacy-policy.html">privacy & policy</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+        </section>
+
+
+
+        <!-- footer section bottom -->
+        <section class="footer-section-bottom">
+            <div class="footer-sec-btm-top">
+                <p>Copyright &copy; 2022 - All rights reserved by <a href="../index.html">ABC Learning Center</a> .</p>
+            </div>
+            <div class="footer-sec-btm-bottom">
+                <ul>
+                    <li><i class="fa-brands fa-linkedin-in" onclick="window.open('./comingsoon.html')"></i></li>
+                    <li><i class="fa-brands fa-facebook-f" onclick="window.open('./comingsoon.html')"></i></li>
+                    <li><i class="fa-brands fa-twitter" onclick="window.open('./comingsoon.html')"></i></li>
+                    <li><i class="fa-brands fa-google-plus-g" onclick="window.open('./comingsoon.html')"></i></li>
+                </ul>
+            </div>
+        </section>
+
+    </footer>
+    <!-- footer section ends here -->
+
+
+
+
+    <!-- scripts section -->
+    <script type="text/javascript" src="../js/main.js"></script>
+
+</body>
+
+</html>

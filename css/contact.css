@@ -1,0 +1,193 @@
+html {
+    font-size: 62.5%;
+}
+
+/*  */
+/*  */
+/* ----------------------------------------------------------section devider-------------------------------------------------------------------------------- */
+/*  */
+/*  */
+
+/* section 1 */
+.mcs-sec-1 p {
+    font-size: 1.6rem;
+}
+
+.mcs-sec-1 a {
+    color: rgb(119, 201, 252);
+    font-family: "Libre Baskerville", serif;
+    font-size: 1.2rem;
+    text-decoration: underline;
+}
+
+.mcs-sec-1 a:hover {
+    color: red;
+}
+
+.mcs-sec-1 a:visited {
+    color: purple;
+}
+
+/*  */
+/*  */
+/* section 2 */
+.mcs-sec-2 {
+    margin: 5rem 0;
+}
+
+.cont-phn-em {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.cont-phn-em > div:nth-child(1) {
+    flex: 33%;
+}
+.cont-phn-em > div:nth-child(2) {
+    flex: 33%;
+    margin: 0 3rem;
+}
+.cont-phn-em > div:nth-child(3) {
+    flex: 33%;
+}
+
+.cont-phn-em h2 {
+    font-size: 2.1rem;
+    margin-bottom: 0.7rem;
+}
+
+.cont-phn-em a {
+    font-size: 1.4rem;
+    color: rgb(81, 168, 223);
+    line-height: 1.7;
+}
+
+/*  */
+/*  */
+/* section 3 */
+.mcs-sec-3 {
+    display: flex;
+}
+
+.mcs-sec-3 > div:nth-child(1) {
+    flex: 45%;
+    border: 0.2rem solid;
+    padding: 2rem;
+    margin-right: 3rem;
+}
+
+.mcs-sec-3 > div:nth-child(1) h3 {
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-bottom: 1.5rem;
+}
+
+.mcs-sec-3 > div:nth-child(1) > div {
+    max-width: 80%;
+    margin-left: 5rem;
+}
+
+.mcs-sec-3 > div:nth-child(1) > div li {
+    font-size: 2.2rem;
+    line-height: 2.1;
+}
+
+.mcs-sec-3 > div:nth-child(1) > div a {
+    color: skyblue;
+    text-decoration: underline;
+}
+
+.mcs-sec-3 > div:nth-child(2) {
+    flex: 45%;
+}
+
+.mcs-sec-3 form {
+    max-width: 70%;
+    border: 0.1rem solid black;
+    padding: 2rem;
+    border-radius: 0.7rem;
+    margin: auto;
+    box-shadow: 0 0 1.7rem 0.3rem rgb(151, 149, 149);
+    transition: box-shadow ease-in-out 0.7s;
+}
+
+.mcs-sec-3 form:hover {
+    box-shadow: 0 0 1.7rem 0.5rem grey;
+    cursor: pointer;
+}
+
+.mcs-sec-3 form > div:not(:last-child) {
+    margin-bottom: 1.7rem;
+}
+
+.mcs-sec-3 form label {
+    font-size: 1.7rem;
+    font-weight: bolder;
+}
+
+.mcs-sec-3 input {
+    flex: 50%;
+    border: 0.1rem solid rgba(240, 233, 233, 0.664);
+    border-radius: 0.3rem;
+    padding: 1rem 1.5rem;
+    letter-spacing: 0.1rem;
+    background: rgba(212, 202, 202, 0.281);
+    min-width: 100%;
+    margin: 1rem auto;
+}
+
+.mcs-sec-3 textarea {
+    background: rgba(212, 202, 202, 0.281);
+    resize: none;
+    width: 100%;
+    border-radius: 0.7rem;
+    margin-top: 0.9rem;
+    padding: 1rem 1.5rem;
+}
+
+/*  */
+/*  */
+/* section 4 */
+.mcs-sec-4 {
+    background: #76a5af;
+    padding: 1.3rem 3rem;
+    border: 0.2rem solid;
+    border-radius: 0.4rem;
+    margin: 5rem 0;
+}
+
+.mcs-sec-4 h4 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.add-map {
+    display: flex;
+}
+
+.add-map > div:nth-child(1) {
+    flex: 30%;
+    border: 0.2rem solid;
+    background: rgb(252, 252, 252);
+    padding: 1%;
+}
+
+.add-map p:nth-child(1) {
+    font-size: 2.1rem;
+    font-weight: bold;
+}
+
+.add-map p:nth-child(2) {
+    font-size: 1.5rem;
+}
+
+.add-map > div:nth-child(2) {
+    flex: 70%;
+    margin-left: 3rem;
+}
+
+.add-map iframe {
+    width: 100%;
+    min-height: 35rem;
+}
